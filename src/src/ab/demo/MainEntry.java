@@ -137,7 +137,7 @@ public class MainEntry {
 							System.out.println("Please input the correct command");
 		}
 		else 
-			System.out.println("Please input the correct command");
+			System.out.println("Please input the correct command !!!");
 		
 
 	}

@@ -1,6 +1,8 @@
-# deep-learning-project
+# Deep Learning Project
 
 2019F Deep Learning Class Project
+
+**Goal :** Angry Birds 게임의 Autoplay AI agent가 게임의 각 level 에서 최소 별 2개 이상의 점수를 받을 수 있도록 학습시킨다.
 
 ### Server-Client architecture
 
@@ -32,3 +34,38 @@ vision module은 game play screenshot 에서 object 들에 대한 MBR을 ABObjec
 ## Compile
 
 ANT 사용
+
+---
+
+## Reinforcement Learning
+
+Agent 를 학습시키는 방식에는
+
+- Policy learning
+- Q-Learning
+
+두 가지가 있다.
+
+**Policy learning** 은 "적을 만났는데, 너보다 세면 튀어라" 같은 policy 들을 학습시키는 방법이다.
+
+**Q-Learning** 은 policy learning 과는 다르게 policy를 제공하지 않고 두개의 input인 state, action을 받는다. 이 input pair를 받아서, 각 pair 마다 어떤 값을 계산해내게 되는데 이 값은 각 state에서 agent가 어떤 action을 취할지에 대한 기대값이다.
+
+본 프로젝트에서는 **Q-Learning** 을 사용한다.
+
+출처: https://algorithmia.com/blog/introduction-to-reinforcement-learning
+
+---
+
+## 참고
+
+### Reinforcement Learning
+
+- [Deep Learning in JAVA](http://blog.naver.com/PostView.nhn?blogId=rkdwnsdud555&logNo=221045297396)
+
+- [dl4j github example code](https://github.com/eclipse/deeplearning4j-examples/blob/master/rl4j-examples/src/main/java/org/deeplearning4j/examples/rl4j/Cartpole.java)
+
+## 프로젝트 세팅 및 빌드
+
+- [ANT](https://ant.apache.org/)
+
+- [Simple implementation in RL](https://www.youtube.com/watch?v=yMk_XtIEzH8)
