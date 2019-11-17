@@ -1,0 +1,17 @@
+- You will have a provided folder named "Application Cache".
+- Close all your Chrome windows and kill all the background Chrome processes.
+- Set the file system so that it shows all hidden files.
+- Go to the directory
+	For Windows: C:\\Users\$your_user_profile$\AppData\Local\Google\Chrome\User Data\Default
+	For Linux: /home/$your_user_profile$/.config/google-chrome/Profile 1/
+	For Mac: /Users/$your_user_profile$/Library/Application Support/Google/Chrome/Default
+- You will see a folder named "Application Cache" (if you don't see it just skip the first part of the next step)
+- Change the name of that folder (to anything you can remember), and copy the one provided into the directory
+- Restart Chrome and access the game as before
+
+If this works for you, we recommend you do not update Chrome until the end of the competition. 
+
+You may have to copy the provided application cache folder into the directory every time before you start the game. 
+
+
+

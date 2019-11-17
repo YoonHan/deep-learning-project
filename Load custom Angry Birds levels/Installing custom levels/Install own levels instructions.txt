@@ -1,0 +1,18 @@
+Instructions for adding additional Angry Birds levels:
+-a. In Chrome, go to Settings->Tools->Extensions
+-b. Tick "Developer Mode"
+-c. Click "Load unpacked extensions..."
+-d. Select the "custom_levels" folder and confirm
+-e. Make sure the extension called "Angry Birds Interface" is enabled
+-f. Copy the .json files for the desired levels into the "level" folder within the "custom_levels" folder
+-g. These levels will replace the original levels on Angry Birds Chrome corresponding to their number
+
+
+Levels must follow the following naming convention to replace the levels on the first poached eggs page:
+
+level1-1.json, level1-2.json, level1-3.json, etc. Up to a maximum of level1-21.json
+
+to replace the levels on the second and third poached eggs pages, use the naming convention level2-X.json and level3-X.json respectively
+
+
+Some example json files used for levels in past competition is provided in the Past competition levels folder
