@@ -54,6 +54,8 @@ build.xml 파일이 있는 디렉토리에서
 
 5. 해당 pig 를 맞출 수 있는 trajectory 를 찾아서 새총을 발사한다.
 
+## 기본 소스코드에서 변경된 로직 설명
+
 ---
 
 ## Reinforcement Learning
