@@ -42,6 +42,18 @@ build.xml 파일이 있는 디렉토리에서
 
 명령을 순서대로 실행한다.
 
+## 기본 소스코드 실행 로직 분석
+
+1. `MainEntry.java` 에서 프로그램 실행 시 인자로 넘겨준 옵션에 따라 `NaiveAgent` 실행 방식을 다르게 해준다.
+
+2. `-na` 옵션만주고 실행시켰을 때, `MainEntry.java` 에서 `na.run()` 코드가 실행된다.
+
+3. `aRobot.loadLevel(currentLevel)` 코드로 레벨(맵)을 불러온 후에 `while` 무한루프로 게임을 실행시킨다.
+
+4. `GameState state = solve()` 에서 현재 game state 를 구한다. `solve()` 에는 현재 게임 화면을 분석해서 object detection 을 한 후에 detect 된 pig 를 랜덤하게 골라 targeting 한다.
+
+5. 해당 pig 를 맞출 수 있는 trajectory 를 찾아서 새총을 발사한다.
+
 ---
 
 ## Reinforcement Learning
