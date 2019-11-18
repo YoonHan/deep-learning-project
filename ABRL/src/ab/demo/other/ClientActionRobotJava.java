@@ -19,7 +19,7 @@ import ab.vision.ABObject;
 import ab.vision.ABType;
 import ab.vision.Vision;
 import ab.vision.GameStateExtractor.GameState;
-import external.ClientMessageEncoder;
+import ab.external.ClientMessageEncoder;
 
 //Java interface of ClientActionRobot
 public class ClientActionRobotJava extends ClientActionRobot {

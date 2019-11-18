@@ -17,8 +17,8 @@ import java.io.OutputStream;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
-import external.ClientMessageEncoder;
-import external.ClientMessageTable;
+import ab.external.ClientMessageEncoder;
+import ab.external.ClientMessageTable;
 /**
  * A server/client version of the java util class that encodes client messages and decodes 
  * the corresponding server messages complying with the protocols. Its subclass is ClientActionRobotJava.java 

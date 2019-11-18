@@ -11,8 +11,8 @@
     </target>
 
     <target name="compile">
-        <mkdir dir="src"/>
-	 <javac srcdir="src" destdir="src" classpathref="classpath"/>
+        <mkdir dir="output"/>
+	 <javac srcdir="ab" destdir="output" classpathref="classpath"/>
     </target>  
 
 
@@ -25,7 +25,7 @@
                 <attribute name="Rsrc-Class-Path" value="./ Jama-1.0.2.jar json-simple-1.1.1.jar WebSocket.jar commons-codec-1.7.jar"/>
             </manifest>
             <zipfileset src="external/jar-in-jar-loader.zip"/>
-            <fileset dir="src/"/>
+            <fileset dir="output/"/>
             <zipfileset dir="external" includes="Jama-1.0.2.jar"/>
             <zipfileset dir="external" includes="json-simple-1.1.1.jar"/>
             <zipfileset dir="external" includes="WebSocket.jar"/>

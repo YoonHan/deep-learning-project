@@ -7,7 +7,7 @@
 **To view a copy of this license, visit http://www.gnu.org/licenses/
  *****************************************************************************/
 
-package external;
+package ab.external;
 
 /*encode the messages to byte[]*/
 public class ClientMessageEncoder {
