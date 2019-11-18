@@ -23,7 +23,7 @@ vision module은 game play screenshot 에서 object 들에 대한 MBR을 ABObjec
 
 ## Access the Game state
 
-4 가지의 game state 가 있다.
+5 가지의 game state 가 있다.
 
 1. WON
 2. LOST
@@ -34,6 +34,13 @@ vision module은 game play screenshot 에서 object 들에 대한 MBR을 ABObjec
 ## Compile
 
 ANT 사용
+
+build.xml 파일이 있는 디렉토리에서
+
+`ant compile`
+`ant jar`
+
+명령을 순서대로 실행한다.
 
 ---
 
