@@ -52,9 +52,9 @@ public class NaiveAgent implements Runnable {
 	// run the client
 	public void run() {
 
-		aRobot.loadLevel(currentLevel);
+		aRobot.loadLevel(currentLevel);		// Level(맵) load
 		while (true) {
-			GameState state = solve();
+			GameState state = solve();		// Game State 계산
 			if (state == GameState.WON) {
 				try {
 					Thread.sleep(3000);
@@ -137,7 +137,16 @@ public class NaiveAgent implements Runnable {
 			sling = vision.findSlingshotMBR();
 		}
         // get all the pigs
+		// and all the blocks, TNTs
  		List<ABObject> pigs = vision.findPigsMBR();
+		List<ABObject> blocks = vision.findBlocksMBR();
+		List<ABObject> tnts = vision.findTNTs();
+		List<ABObject> targets = new ArrayList<>();
+
+		// put all of objects in candidates List
+		targets.addAll(pigs);
+		targets.addAll(blocks);
+		targets.addAll(tnts);
 
 		GameState state = aRobot.getState();
 
@@ -150,10 +159,10 @@ public class NaiveAgent implements Runnable {
 				Shot shot = new Shot();
 				int dx,dy;
 				{
-					// random pick up a pig
-					ABObject pig = pigs.get(randomGenerator.nextInt(pigs.size()));
-					
-					Point _tpt = pig.getCenter();// if the target is very close to before, randomly choose a
+					// random pick up a target
+					ABObject target = targets.get(randomGenerator.nextInt(targets.size()));
+					System.out.println("[Target]: " + target.type);
+					Point _tpt = target.getCenter();// if the target is very close to before, randomly choose a
 					// point near it
 					if (prevTarget != null && distance(prevTarget, _tpt) < 10) {
 						double _angle = randomGenerator.nextDouble() * Math.PI * 2;
