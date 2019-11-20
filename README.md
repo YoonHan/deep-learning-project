@@ -72,6 +72,8 @@ Agent 를 학습시키는 방식에는
 **Q-Learning** 은 policy learning 과는 다르게 policy를 제공하지 않고 두개의 input인 state, action을 받는다. 이 input pair를 받아서, 각 pair 마다 어떤 값을 계산해내게 되는데 이 값은 각 state에서 agent가 어떤 action을 취할지에 대한 기대값이다.
 
 본 프로젝트에서는 **Q-Learning** 을 사용한다.
+-> 원래 Q-Learning 을 사용해보려고 했으나, 본 프로젝트의 action space 가 discrete 이 아니라 continuous space 이므로
+deep deterministic policy gradient(DDPG)를 사용하기로 했다.
 
 출처: https://algorithmia.com/blog/introduction-to-reinforcement-learning
 
@@ -81,12 +83,16 @@ Agent 를 학습시키는 방식에는
 
 ### Reinforcement Learning
 
-- [Deep Learning in JAVA](http://blog.naver.com/PostView.nhn?blogId=rkdwnsdud555&logNo=221045297396)
+- [강화학습 기초](https://daeson.tistory.com/311?category=710652)
 
-- [dl4j github example code](https://github.com/eclipse/deeplearning4j-examples/blob/master/rl4j-examples/src/main/java/org/deeplearning4j/examples/rl4j/Cartpole.java)
+- [강화학습 알아보기](https://greentec.github.io/reinforcement-learning-fourth/)
+
+- [A3C 쉽고 깊게 이해하기](https://www.slideshare.net/WoongwonLee/rlcode-a3c)
+
+- [Simple implementation in RL](https://www.youtube.com/watch?v=yMk_XtIEzH8)
+
+- [DDPG](https://reinforcement-learning-kr.github.io/2018/06/26/3_ddpg/)
 
 ## 프로젝트 세팅 및 빌드
 
 - [ANT](https://ant.apache.org/)
-
-- [Simple implementation in RL](https://www.youtube.com/watch?v=yMk_XtIEzH8)
