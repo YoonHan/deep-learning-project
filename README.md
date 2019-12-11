@@ -4,6 +4,10 @@
 
 **Goal :** Angry Birds 게임의 Autoplay AI agent가 게임의 각 level 에서 최소 별 2개 이상의 점수를 받을 수 있도록 학습시킨다.
 
+**Developmnet Environment :**
+HOST: Linux Ubuntu 16.04 LTS
+Java version: OpenJDK 1.8.0_222
+
 ---
 
 ### Server-Client architecture
