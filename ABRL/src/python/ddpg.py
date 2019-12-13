@@ -46,7 +46,7 @@ class DDPG:
 
     # observation_1 = state at time t
     # observation 2 = state at time (t + 1)
-    def add_experience(selfk, observation_1, observation_2, action, reward, done):
+    def add_experience(self, observation_1, observation_2, action, reward, done):
         self.observation_1 = observation_1
         self.observation_2 = observation_2
         self.action = action

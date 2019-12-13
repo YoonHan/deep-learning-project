@@ -257,8 +257,7 @@ class PlayAgent:
                     # 이기면 reward를 받고 지면 받지 않는다.
                     if state == state.WON:
                         score = self.se.getScoreEndGame(screenshot)
-                        # 현재 step에서 얻은 점수를 1000으로 나눈 값을 reward 로 사용
-                        # step 이란 새를 한 번 쏘는 행위를 뜻한다.
+                        # 현재 episode 에서 얻은 점수를 1000으로 나눈 값을 reward 로 사용
                         reward = (score - prevscore) / 1000.0
                     else:
                         reward = 0.00
